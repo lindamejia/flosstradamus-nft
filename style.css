@@ -179,8 +179,9 @@ img {
 .page6 {
   text-align: center;
   border: 1px solid white;
-  margin: 0px 35%;
-  padding: 20px;
+  margin-left:35%;
+  margin-right: 35%;
+  padding: 50px 0;
 }
 
 #countdown li {
@@ -201,7 +202,7 @@ img {
 }
 
 #launching {
-  padding-top: 40%;
+  padding-top: 200px;
 }
 
 #get-notified {
