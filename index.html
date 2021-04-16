@@ -11,30 +11,60 @@
 </head>
 
 <body>
-    <!-- <div id="nav-burger">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <img src="images/exclamation.png" width="20px" />
-    </div> -->
+    <div id="dot-nav">
+        <a href="#one" class="dot active">
+            •
+        </a>
+        <br />
+        <a href="#two" class="dot">
+            •
+        </a>
+        <br />
+        <a href="#three" class="dot">
+            •
+        </a>
+        <br />
+        <a href="#four" class="dot">
+            •
+        </a>
+        <br />
+        <a href="#five" class="dot">
+            •
+        </a>
+        <br />
+        <a href="#six" class="dot">
+            •
+        </a>
+        <br />
+        <a href="http://flosstradamus.com/" target="_blank">
+            <img src="images/exclamation.png" height="30px" />
+        </a>
+    </div>
+
 
     <div class="container">
         <div class="section page1">
+            <a name="one"></a>
             <div class="content">
                 <h1>FLOSSTRADAMUS PRESENTS</h1>
                 <h2>SMOKABLE NFT - GENESIS EXPERIENCE</h2>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-        <div class="section page2">
+
+        <div name="second" class="section page2">
+            <a name="two"></a>
             <div class="content">
                 <h3>MULTI UNLOCKABLE NFT</h3>
             </div>
         </div>
+
         <div class="section page3">
+            <a name="three"></a>
             <div class="content">
                 <div id="line1">
                 </div>
@@ -44,7 +74,9 @@
 
             </div>
         </div>
+
         <div class="section page4">
+            <a name="four"></a>
             <div class="content">
                 <h1>PHYSICAL</h1>
                 <h1>MEETS</h1>
@@ -53,7 +85,9 @@
                 <div id="line2"></div>
             </div>
         </div>
+
         <div class="section page5">
+            <a name="five"></a>
             <div class="content">
                 <div id="line1"></div>
                 <h1>TAKE A HIT AND </h1>
@@ -64,6 +98,7 @@
         </div>
 
         <div class="section">
+            <a name="six"></a>
             <div class="content page6">
                 <!-- <h1 id="headline">Countdown to my birthday:</h1> -->
                 <div id="countdown">
@@ -162,12 +197,26 @@
 
         //  Countdown
 
+        // NAVIGATION CLICK EVETN
+        // Get the container element
+        var btnContainer = document.getElementById("dot-nav");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("dot");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        // SCROLL
 
     </script>
-    <!-- Full page scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
-        integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

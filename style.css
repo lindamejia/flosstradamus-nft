@@ -116,7 +116,7 @@ img {
   padding: 0px 20px 0px 20px;
   display: block;
   font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.226);
+  background-color: rgba(255, 255, 255, 0.694);
   border-radius: 5px;
 }
 
@@ -201,11 +201,11 @@ img {
   border-radius: 5px;
 }
 
-.page6  {
-  margin-top:70px;
+.page6 {
+  margin-top: 70px;
 }
 
-#launching{
+#launching {
   padding-top: 40%;
 }
 
@@ -293,4 +293,36 @@ img {
     width: 100%;
     margin: 0.5em 0 0 0;
   }
+}
+
+/* SCROLL */
+
+#dot-nav {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -50px;
+  height: 100px;
+  z-index: 999;
+  font-size: 30px;
+  color:white;
+  text-align: center;
+}
+
+#dot-nav img{
+  padding-right:10px;
+  padding-top:20px;
+}
+
+#dot-nav a{
+  color:white;
+  text-decoration: none;
+}
+.active, .dot:hover {
+  -webkit-text-stroke: 5px red;
+}
+
+li.active a {
+  /* border-top: 3px solid #333; */
+  color: red;
 }
