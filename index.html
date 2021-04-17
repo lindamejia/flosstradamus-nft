@@ -8,13 +8,19 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Flosstradamus - Smokable NFT - Genesis Experience</title>
+
+    <!-- Loading -->
+    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
 </head>
 
-<body>
-    <div id="dot-nav">
-        <a href="#one" class="dot active">
+
+<body class="loading">
+    <div class="navigation" id="dot-nav">
+        <a href="#one" class="dot">
             •
         </a>
         <br />
@@ -41,12 +47,12 @@
         <a href="http://flosstradamus.com/" target="_blank">
             <img src="images/exclamation.png" height="30px" />
         </a>
+        </ul>
     </div>
-
 
     <div class="container">
         <div class="section page1">
-            <a name="one"></a>
+            <div id="one"></div>
             <div class="content">
                 <h1>FLOSSTRADAMUS PRESENTS</h1>
                 <h2>SMOKABLE NFT - GENESIS EXPERIENCE</h2>
@@ -58,15 +64,15 @@
             </div>
         </div>
 
-        <div name="second" class="section page2">
-            <a name="two"></a>
+        <div class="section page2">
+            <div id="two"></div>
             <div class="content">
                 <h3>MULTI UNLOCKABLE NFT</h3>
             </div>
         </div>
 
         <div class="section page3">
-            <a name="three"></a>
+            <a id="three"></a>
             <div class="content">
                 <div id="line1">
                 </div>
@@ -78,7 +84,7 @@
         </div>
 
         <div class="section page4">
-            <a name="four"></a>
+            <a id="four"></a>
             <div class="content">
                 <h1>PHYSICAL</h1>
                 <h1>MEETS</h1>
@@ -90,7 +96,7 @@
         </div>
 
         <div class="section page5">
-            <a name="five"></a>
+            <a id="five"></a>
             <div class="content">
                 <div id="line1"></div>
                 <h1>TAKE A HIT AND </h1>
@@ -101,7 +107,7 @@
         </div>
 
         <div class="section ">
-            <a name="six"></a>
+            <a id="six"></a>
             <div class="content page6">
                 <!-- <h1 id="headline">Countdown to my birthday:</h1> -->
                 <div id="countdown">
@@ -216,9 +222,10 @@
             });
         }
 
-        // SCROLL
-
     </script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/demo2.js"></script>
 
 </body>
 
