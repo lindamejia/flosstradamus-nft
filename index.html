@@ -5,161 +5,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="countdown.css" />
+
     <title>Flosstradamus - Smokable NFT - Genesis Experience</title>
-
-    <!-- Loading -->
-    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-
 </head>
 
-
-<body class="loading">
-    <div class="navigation" id="dot-nav">
-        <a href="#one" class="dot">
-            •
-        </a>
-        <br />
-        <a href="#two" class="dot">
-            •
-        </a>
-        <br />
-        <a href="#three" class="dot">
-            •
-        </a>
-        <br />
-        <a href="#four" class="dot">
-            •
-        </a>
-        <br />
-        <a href="#five" class="dot">
-            •
-        </a>
-        <br />
-        <a href="#six" class="dot">
-            •
-        </a>
-        <br />
-        <a href="http://flosstradamus.com/" target="_blank">
-            <img src="images/exclamation.png" height="30px" />
-        </a>
-        </ul>
-    </div>
-
-    <div class="container">
-        <div class="section page1">
-            <div id="one"></div>
-            <div class="content">
-                <h1>FLOSSTRADAMUS PRESENTS</h1>
-                <h2>SMOKABLE NFT - GENESIS EXPERIENCE</h2>
-                <div class="arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+<body class="countdownPage">
+    <div class="page1">
+        <div class="layer">
+            <h1>FLOSSTRADAMUS PRESENTS</h1>
+            <div class="container">
+                <div class="row">
+                    <!-- <h1 id="headline">Countdown to my birthday:</h1> -->
+                    <div id="countdown">
+                        <h1>Launching Soon</h1>
+                        <p>Have no fear, we are launching soon</p>
+                        <p>We just have to dot the i's and cross the t's.</p>
+                        <ul>
+                            <li class="col-md-2 col-xs-3">Days<span id="days"></span></li>
+                            <li class="col-md-2 col-xs-3">Hours<span id="hours"></span></li>
+                            <li class="col-md-2 col-xs-3">Minutes<span id="minutes"></span></li>
+                            <li class="col-md-2 col-xs-3">Seconds<span id="seconds"></span></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <video width="320" height="240" autoplay muted>
+                    <source src="vapeVideo.mp4" type="video/mp4">
+                  </video>
+                <div>
+                    <h3> GET NOTIFIED</h3>
+                    <p> We will let you know when we are launching.</p>
+                    <!-- This is the code you will get from Mailchimp’s NAKED Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="//mc.us4.list-manage.com/subscribe/form-post?u=1019f5d7552dd73f64b70b554&id=9e9fb8b699&popup=true"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
 
-        <div class="section page2">
-            <div id="two"></div>
-            <div class="content">
-                <h3>MULTI UNLOCKABLE NFT</h3>
-            </div>
-        </div>
+                                <!-- Text Input Field -->
+                                <div class="mc-field-group"><input type="email" placeholder="Your Email" name="EMAIL"
+                                        class="required email" id="mce-EMAIL"></div>
+                                <!-- /Text Input Field -->
 
-        <div class="section page3">
-            <a id="three"></a>
-            <div class="content">
-                <div id="line1">
-                </div>
-                <h1>GET HIGH </h1>
-                <h1>FROM THE </h1>
-                <h1>EXPERIENCE</h1>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 
-            </div>
-        </div>
+                                <div style="position: absolute; left: -5000px;"><input type="text"
+                                        name="b_0b5586be71b0fee16a03f5684_e41ec18eab" tabindex="-1" value=""></div>
 
-        <div class="section page4">
-            <a id="four"></a>
-            <div class="content">
-                <h1>PHYSICAL</h1>
-                <h1>MEETS</h1>
-                <h1>DIGITAL</h1>
-                <p>first OF A KIND TECHnology</p>
-                <p>created </p>
-                <div id="line2"></div>
-            </div>
-        </div>
-
-        <div class="section page5">
-            <a id="five"></a>
-            <div class="content">
-                <div id="line1"></div>
-                <h1>TAKE A HIT AND </h1>
-                <h1>UNLOCK THE</h1>
-                <h1>FUTURE</h1>
-                <p>PUT YOUR CRYPTO WHERE YOUR MOUTH IS</p>
-            </div>
-        </div>
-
-        <div class="section ">
-            <a id="six"></a>
-            <div class="content page6">
-                <!-- <h1 id="headline">Countdown to my birthday:</h1> -->
-                <div id="countdown">
-                    <h3 id="launching">Launching Soon</h3>
-                    <ul>
-                        <li>Days<span id="days"></span></li>
-                        <li>Hours<span id="hours"></span></li>
-                        <li>Minutes<span id="minutes"></span></li>
-                        <li>Seconds<span id="seconds"></span></li>
-                    </ul>
-                </div>
-                <h3 id="get-notified">Get Notified</h3>
-                <div id="mc_embed_signup">
-                    <form
-                        action="//mc.us4.list-manage.com/subscribe/form-post?u=1019f5d7552dd73f64b70b554&id=9e9fb8b699&popup=true"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-
-                            <!-- Text Input Field -->
-                            <div class="mc-field-group"><input type="email" placeholder="Your Email" name="EMAIL"
-                                    class="required email" id="mce-EMAIL"></div>
-                            <!-- /Text Input Field -->
-
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                <!-- Submit Button -->
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                        id="mc-embedded-subscribe" class="button"></div>
+                                <!-- /Submit Button -->
                             </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-                            <div style="position: absolute; left: -5000px;"><input type="text"
-                                    name="b_0b5586be71b0fee16a03f5684_e41ec18eab" tabindex="-1" value=""></div>
-
-                            <!-- Submit Button -->
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                    id="mc-embedded-subscribe" class="button"></div>
-                            <!-- /Submit Button -->
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
                 </div>
-
-
+                <div class="enter-website">
+                    <a href="http://flosstradamus.com/"> ENTER WEBSITE </a>
+                </div>
             </div>
+            <h2>SMOKABLE NFT - GENESIS EXPERIENCE</h2>
         </div>
-
-        <!-- Page 6 -->
-    </div>
+   
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-
 
     <script type="text/javascript">
         // Countdown
@@ -169,16 +91,9 @@
                 hour = minute * 60,
                 day = hour * 24;
 
-            let release = "Apr 20, 2021 16:20:00",
+            let release = "04/20/2021 4:20 PM EDT",
 
-                offset = -4.0
-
-            clientDate = new Date(release);
-            utc = clientDate.getTime() + (clientDate.getTimezoneOffset() * 60000);
-
-            serverDate = new Date(utc + (3600000 * offset));
-
-            countDown = new Date(serverDate.toLocaleString()).getTime(),
+                countDown = new Date(release).getTime(),
                 x = setInterval(function () {
                     let now = new Date().getTime(),
                         distance = countDown - now;
@@ -212,29 +127,8 @@
                 }, 0);
         })();
 
-        //  Countdown
-
-        // NAVIGATION CLICK EVETN
-        // Get the container element
-        var btnContainer = document.getElementById("dot-nav");
-
-        // Get all buttons with class="btn" inside the container
-        var btns = btnContainer.getElementsByClassName("dot");
-
-        // Loop through the buttons and add the active class to the current/clicked button
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-
+      //  Countdown
     </script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/charming.min.js"></script>
-    <script src="js/demo2.js"></script>
-
 </body>
 
 </html>
